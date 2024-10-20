@@ -35,7 +35,7 @@ export default function Home() {
 
   const [systemPrompt, setSystemPrompt] = useState(SYSTEM_PROMPT);
   const [openAiKey, setOpenAiKey] = useState("");
-  const [elevenLabsKey, setElevenLabsKey] = useState("");
+  const [elevenLabsKey, setElevenLabsKey] = useState("sk_4a26ffe0a815be98d74a1f09e1f89876a0c5ab0872570702");
   const [elevenLabsParam, setElevenLabsParam] = useState<ElevenLabsParam>(DEFAULT_ELEVEN_LABS_PARAM);
   const [koeiroParam, setKoeiroParam] = useState<KoeiroParam>(DEFAULT_KOEIRO_PARAM);
   const [chatProcessing, setChatProcessing] = useState(false);

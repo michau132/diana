@@ -116,12 +116,12 @@ export const Menu = ({
     <>
       <div className="absolute z-10 m-24">
         <div className="grid grid-flow-col gap-[8px]">
-          <IconButton
+          {/* <IconButton
             iconName="24/Menu"
             label="Settings"
             isProcessing={false}
             onClick={() => setShowSettings(true)}
-          ></IconButton>
+          ></IconButton> */}
           {showChatLog ? (
             <IconButton
               iconName="24/CommentOutline"
