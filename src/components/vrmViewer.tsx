@@ -1,11 +1,12 @@
 import { useContext, useCallback } from "react";
 import { ViewerContext } from "../features/vrmViewer/viewerContext";
 import { buildUrl } from "@/utils/buildUrl";
+import { VARIABLES } from "@/utils/variables";
 
 export default function VrmViewer() {
   const { viewer } = useContext(ViewerContext);
 
-  const AVATAR_SAMPLE_B_VRM_URL = '/3578943467535619867.vrm';
+  const AVATAR_SAMPLE_B_VRM_URL = VARIABLES.AVATAR_URL;
 
   const canvasRef = useCallback(
     (canvas: HTMLCanvasElement) => {
