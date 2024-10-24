@@ -1,9 +1,9 @@
 import { buildUrl } from "@/utils/buildUrl";
 import Head from "next/head";
 export const Meta = () => {
-  const title = "Elfi Ai";
+  const title = "Sakura Ai";
   const description =
-    "You can enjoy conversations with 3D Elfi Ai using only a web browser using a microphone, text input, and speech synthesis.";
+    `You can enjoy conversations with 3D ${title} using only a web browser using a microphone, text input, and speech synthesis.`;
   const imageUrl = "https://auto-chat-chi.vercel.app/ogp-en.png";
   return (
     <Head>

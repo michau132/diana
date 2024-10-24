@@ -17,6 +17,7 @@ import { Menu } from "@/components/menu";
 import { GitHubLink } from "@/components/githubLink";
 import { Meta } from "@/components/meta";
 import { ElevenLabsParam, DEFAULT_ELEVEN_LABS_PARAM } from "@/features/constants/elevenLabsParam";
+import { VARIABLES } from "@/utils/variables";
 
 const m_plus_2 = M_PLUS_2({
   variable: "--font-m-plus-2",
@@ -35,7 +36,7 @@ export default function Home() {
 
   const [systemPrompt, setSystemPrompt] = useState(SYSTEM_PROMPT);
   const [openAiKey, setOpenAiKey] = useState("");
-  const [elevenLabsKey, setElevenLabsKey] = useState("sk_4a26ffe0a815be98d74a1f09e1f89876a0c5ab0872570702");
+  const [elevenLabsKey, setElevenLabsKey] = useState(VARIABLES.ELEVEN_LABS_API_KEY);
   const [elevenLabsParam, setElevenLabsParam] = useState<ElevenLabsParam>(DEFAULT_ELEVEN_LABS_PARAM);
   const [koeiroParam, setKoeiroParam] = useState<KoeiroParam>(DEFAULT_KOEIRO_PARAM);
   const [chatProcessing, setChatProcessing] = useState(false);

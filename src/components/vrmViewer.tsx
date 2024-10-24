@@ -5,7 +5,7 @@ import { buildUrl } from "@/utils/buildUrl";
 export default function VrmViewer() {
   const { viewer } = useContext(ViewerContext);
 
-  const AVATAR_SAMPLE_B_VRM_URL = '/2413783484608688556.vrm';
+  const AVATAR_SAMPLE_B_VRM_URL = '/3578943467535619867.vrm';
 
   const canvasRef = useCallback(
     (canvas: HTMLCanvasElement) => {

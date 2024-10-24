@@ -1,3 +1,4 @@
+import { VARIABLES } from "@/utils/variables";
 import { Message } from "../messages/messages";
 import { getWindowAI } from 'window.ai';
 
@@ -57,7 +58,7 @@ export async function getChatResponseStream(
           // if window.ai is not found, call OpenRouter
 
           // const OPENROUTER_API_KEY = '1'; // TODO: fetch from env
-          const OPENROUTER_API_KEY = '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'; // Fetch from env
+          const OPENROUTER_API_KEY = VARIABLES.OPENAI_API_KEY; // Fetch from env
           const YOUR_SITE_URL = 'https://chat-vrm-window.vercel.app/';
           const YOUR_SITE_NAME = 'ChatVRM';
 
