@@ -1,7 +1,8 @@
 import { buildUrl } from "@/utils/buildUrl";
+import { VARIABLES } from "@/utils/variables";
 import Head from "next/head";
 export const Meta = () => {
-  const title = "Sakura Ai";
+  const title = VARIABLES.name;
   const description =
     `You can enjoy conversations with 3D ${title} using only a web browser using a microphone, text input, and speech synthesis.`;
   const imageUrl = "https://auto-chat-chi.vercel.app/ogp-en.png";
