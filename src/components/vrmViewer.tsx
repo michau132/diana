@@ -3,10 +3,10 @@ import { ViewerContext } from "../features/vrmViewer/viewerContext";
 import { buildUrl } from "@/utils/buildUrl";
 import { VARIABLES } from "@/utils/variables";
 
+const AVATAR_SAMPLE_B_VRM_URL = VARIABLES.AVATAR_URL;
 export default function VrmViewer() {
   const { viewer } = useContext(ViewerContext);
 
-  const AVATAR_SAMPLE_B_VRM_URL = VARIABLES.AVATAR_URL;
 
   const canvasRef = useCallback(
     (canvas: HTMLCanvasElement) => {
